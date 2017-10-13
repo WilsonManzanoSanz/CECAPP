@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Creación de Lugar"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:id="@+id/place_fragment_title"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_camera"
+        android:layout_below="@id/place_fragment_title"
+        android:id="@+id/place_fragment_camera_button"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/place_fragment_camera_button"
+        android:layout_centerHorizontal="true"
+
+         />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del lugar"
+        android:layout_below="@id/imageView"
+        android:id="@+id/edit_text_place_name"
+        android:layout_margin="10dp"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripcion del lugar"
+        android:layout_below="@id/edit_text_place_name"
+        android:id="@+id/edit_text_place_description"
+        android:layout_margin="10dp"
+
+        />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:id="@+id/place_fragment_rating_bar"
+        android:layout_below="@id/edit_text_place_description"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear lugar"
+        android:drawableLeft="@android:drawable/ic_input_add"
+        android:layout_margin="10dp"
+        android:layout_below="@id/place_fragment_rating_bar"
+        android:id="@+id/place_fragment_create_place"
+        />
+</RelativeLayout>
+</ScrollView>

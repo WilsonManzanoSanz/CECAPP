@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start service"
+        android:layout_margin="10dp"
+        android:id="@+id/intents_fragment_start_service_button"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop service"
+        android:layout_margin="10dp"
+        android:id="@+id/intents_fragment_stop_service_button"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:hint="Enviar al servicio"
+            android:id="@+id/edit_text_for_service_message"
+            android:layout_margin="5dp"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Enviar"
+            android:id="@+id/send_this_message_to_service_button"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/intents_fragment_longitude_text_view"
+        android:layout_margin="10dp"
+        android:text="longitud..."
+        android:textSize="22dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/intents_fragment_latitude_text_view"
+        android:layout_margin="10dp"
+        android:text="latitude..."
+        android:textSize="22dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/intents_fragment_date_text_view"
+        android:layout_margin="10dp"
+        android:text="Date..."
+        android:textSize="22dp"
+        />
+
+</LinearLayout>
